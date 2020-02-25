@@ -1,0 +1,20 @@
+Week of 2-24-29
+
+2-24-20
+
+Javascript uses prototypical inheritance 
+class keyword uses this
+
+Static Methods
+    Works on classes
+    Typically used as utility fucnctions 
+
+Instance Methods
+    Works on the istance of a class
+
+Node.js 
+    server side Javascript. 
+    
+    node callbacks functions
+        require error to be the first argument
+        second argument is for the success 
