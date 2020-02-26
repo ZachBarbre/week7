@@ -34,7 +34,10 @@ const catAndDogController = (request, response) => {
         .end();
 }
 
+const greetController = require('./routes/greet');
+
 app.get('/', rootController);
 app.get('/cat', catController);
 app.get('/dogs', dogController);
 app.get('/cats_and_dogs', catAndDogController);
+app.use('/greet', greetController);
