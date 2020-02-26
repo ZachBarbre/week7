@@ -1,9 +1,13 @@
 const express = require('express');
+const es6Renderer = require('express-es6-template-engine');
 const app = express();
 
 app.listen(3333, () => {
     console.log(`Server running on port 3333`)
 });
+app.engine('html', es6Renderer);
+app.set('views', 'views');
+app.set('view engine', 'html');
 
 const rootController = require('./routes/index');
 const catController = require('./routes/cat');

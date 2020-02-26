@@ -1,8 +1,23 @@
 const express = require('express');
 const router = express.Router();
 
+const data = [
+    {name: 'Bomb', type: 'loud'},
+    {name: 'egg', type: 'quiet'}
+];
+
+
+
 router.get('/', (req, res) => {
-    res.status(200).send(`<h1>Foo</h1>`).end();
-})
+    res.render('template', {
+        locals: {
+            title: 'Foo Page!',
+            arrayOfData: data
+        },
+        partials: {
+            partial: 'partial-foo'
+        }
+    });
+});
 
 module.exports = router; 

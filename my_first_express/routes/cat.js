@@ -2,7 +2,14 @@ const express = require('express');
 const router = express.Router();
 
 router.get('/', (req, res) => {
-    res.status(200).send('<h1>Meow</h1>').end();
+    res.render('template', {
+        locals:{
+            title: "Cats, Cats, Cats"
+        },
+        partials:{
+            partial: 'partial-cat'
+        }
+    })
 });
 
 module.exports = router; 
