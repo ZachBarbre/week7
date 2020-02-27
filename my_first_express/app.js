@@ -14,9 +14,11 @@ const catController = require('./routes/cat');
 const dogController = require('./routes/dog');
 const fooController = require('./routes/foo');
 const personController = require('./routes/person');
+const ceosController = require('./routes/ceosRoute');
 
 app.use('/', rootController);
 app.use('/cat', catController);
 app.use('/dog', dogController);
 app.use('/foo', fooController);
 app.use('/person', personController);
+app.use('/ceos', ceosController);
