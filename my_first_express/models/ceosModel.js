@@ -10,11 +10,21 @@ class ExecutiveList {
         try {
             const response = await db.any(`SELECT * FROM ceos;`);
             return response;
-        } catch (error) {
-            console.error('error: ', error)
+        } catch (err) {
+            console.error('error: ', err)
             return error;
         }
 
+    }
+
+    static async getCEO(id) {
+        try{
+            const response = await db.any(`SELECT * FROM ceos where id = ${id}`);
+            return response;
+        } catch (err) {
+            console.error('error: ', err);
+            return error;
+        }
     }
 }
 

@@ -1,13 +1,13 @@
-const host = 'rajje.db.elephantsql.com',
-  database = 'ohhdjrvp',
-  user = 'ohhdjrvp',
-  password = 'H5qkuqkn0ACVHaiGZyunDrs6jdSfbr4M';
+const host = 'rajje.db.elephantsql.com', 
+  database = 'ohhdjrvp', 
+  user = 'ohhdjrvp', 
+  password = 'H5qkuqkn0ACVHaiGZyunDrs6jdSfbr4M'; 
 
 const options = {
-    host: host,
-    database: database,
-    user: user,
-    password: password
+    host: host, // localhost
+    database: database, // database name
+    user: user, // don't include in afternoon asignmen
+    password: password // don't include in afternoon asignment 
 };
 
 const pgp = require('pg-promise')({
